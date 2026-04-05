@@ -5,6 +5,7 @@ const api = axios.create({
   baseURL: process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000/api',
 });
 
+
 // Add a request interceptor to inject the token
 api.interceptors.request.use(
   (config) => {
